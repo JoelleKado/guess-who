@@ -21,9 +21,11 @@ $(document).ready(function() {
 
 
 
+
 function randomNumber(min, max){//this is the index
-
-
-    return Math.floor(Math.random() * (1 + max - min) + min);
+    let generatedNumber = Math.floor(Math.random() * (1 + max - min) + min);
+    if(generatedNumber ===3){console.log('the number is 3');
+    }
+    return generatedNumber;
     
 }
